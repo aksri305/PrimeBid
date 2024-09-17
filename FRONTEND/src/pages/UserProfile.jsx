@@ -116,7 +116,7 @@ const UserProfile = () => {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700">
-                        Bank Account (IBAN)
+                        Bank Account (IFSC)
                       </label>
                       <input
                         type="text"
@@ -142,7 +142,7 @@ const UserProfile = () => {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700">
-                        Easypaisa Account Number
+                        Razorpay Account Number
                       </label>
                       <input
                         type="text"
