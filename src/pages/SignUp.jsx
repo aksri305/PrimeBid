@@ -13,7 +13,7 @@ const SignUp = () => {
   const [bankAccountName, setBankAccountName] = useState("");
   const [bankAccountNumber, setBankAccountNumber] = useState("");
   const [bankName, setBankName] = useState("");
-  const [easypaisaAccountNumber, setEasypaisaAccountNumber] = useState("");
+  const [razorpayAccountNumber, setrazorpayAccountNumber] = useState("");
   const [paypalEmail, setPaypalEmail] = useState("");
   const [profileImage, setProfileImage] = useState("");
   const [profileImagePreview, setProfileImagePreview] = useState("");
@@ -36,7 +36,7 @@ const SignUp = () => {
       (formData.append("bankAccountName", bankAccountName),
       formData.append("bankAccountNumber", bankAccountNumber),
       formData.append("bankName", bankName),
-      formData.append("easypaisaAccountNumber", easypaisaAccountNumber),
+      formData.append("razorpayAccountNumber", easypaisaAccountNumber),
       formData.append("paypalEmail", paypalEmail));
     dispatch(register(formData));
   };
