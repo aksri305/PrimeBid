@@ -13,7 +13,7 @@ const SignUp = () => {
   const [bankAccountName, setBankAccountName] = useState("");
   const [bankAccountNumber, setBankAccountNumber] = useState("");
   const [bankName, setBankName] = useState("");
-  const [easypaisaAccountNumber, setEasypaisaAccountNumber] = useState("");
+  const [razorpayAccountNumber, setrazorpayAccountNumber] = useState("");
   const [paypalEmail, setPaypalEmail] = useState("");
   const [profileImage, setProfileImage] = useState("");
   const [profileImagePreview, setProfileImagePreview] = useState("");
@@ -36,7 +36,7 @@ const SignUp = () => {
       (formData.append("bankAccountName", bankAccountName),
       formData.append("bankAccountNumber", bankAccountNumber),
       formData.append("bankName", bankName),
-      formData.append("easypaisaAccountNumber", easypaisaAccountNumber),
+      formData.append("razorpayAccountNumber", razorpayAccountNumber),
       formData.append("paypalEmail", paypalEmail));
     dispatch(register(formData));
   };
@@ -203,9 +203,9 @@ const SignUp = () => {
                 <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
                   <input
                     type="number"
-                    value={easypaisaAccountNumber}
-                    placeholder="Easypaisa Account Number"
-                    onChange={(e) => setEasypaisaAccountNumber(e.target.value)}
+                    value={razorpayAccountNumber}
+                    placeholder="Razorpay Account Number"
+                    onChange={(e) => setrazorpayAccountNumber(e.target.value)}
                     className="text-[16px] py-2 bg-transparent border-b-[1px] border-b-stone-500 focus:outline-none sm:flex-1"
                     disabled={role === "Bidder"}
                   />
